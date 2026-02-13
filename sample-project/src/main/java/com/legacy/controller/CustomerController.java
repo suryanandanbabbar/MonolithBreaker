@@ -1,0 +1,1 @@
+package com.legacy.controller; import com.legacy.service.CustomerService; public class CustomerController { private final CustomerService service; public CustomerController(CustomerService s){this.service=s;} public Object get(Long id){ return service.get(id);} }
