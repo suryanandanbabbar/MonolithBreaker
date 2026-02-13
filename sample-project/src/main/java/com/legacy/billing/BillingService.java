@@ -1,0 +1,1 @@
+package com.legacy.billing; import com.legacy.order.OrderService; public class BillingService { private final OrderService orderService; public BillingService(OrderService o){this.orderService=o;} public double charge(Long id){return orderService.total(id);} }

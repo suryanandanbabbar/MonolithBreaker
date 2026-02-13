@@ -1,0 +1,1 @@
+package com.legacy.order; import com.legacy.service.CustomerService; public class OrderService { private final CustomerService customerService; public OrderService(CustomerService c){this.customerService=c;} public double total(Long customerId){ customerService.get(customerId); return 42; }}
